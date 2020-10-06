@@ -1,0 +1,19 @@
+1. Clone the project form git repository
+2. Build using maven "mvn clean install"
+3. Run the application "java -jar <jar location>/marlap-1.0.0.jar
+4. Running port number : 9017
+5. Ensure the application is running by accessing the below service
+   http://localhost:9017/app/live  (get method)
+6. Service Details :
+
+  1. http://localhost:9017/marlap/api/v1/security/question
+     Request Body: (as a payload) Method : Post
+              Hey Service, can you provide me a question with numbers to add?
+     Response : 
+              Here you go, solve the question: "Please sum the numbers 5,15"
+  2. http://localhost:9017/marlap/api/v1/security/answer
+     Request Body: (as a payload) Method : Post
+              Great. The original question was “Please sum the numbers 5,15” and the answer is 20.
+     Response : 
+              That's great  
+                       
